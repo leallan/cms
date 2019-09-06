@@ -14,9 +14,7 @@
                 $cat_id = $row['cat_id'];
                 $cat_title = $row['cat_title'];
                 ?>
-                <input class="form-control" type="text" name="cat_title" value="<?php if (isset($cat_title)) {
-                                                                                            echo $cat_title;
-                                                                                        } ?>">
+                <input class="form-control" type="text" name="cat_title" value="<?php if (isset($cat_title)) { echo $cat_title; } ?>">
         <?php }
         } ?>
 
