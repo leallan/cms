@@ -30,7 +30,7 @@
                 echo "<tr>";
                 echo "<td>$comment_id</td>";
                 echo "<td>$comment_author</td>";
-                echo "<td>$$comment_content</td>";
+                echo "<td>$comment_content</td>";
 
                 // $query = "SELECT * FROM content WHERE content_id = {$content_id}";
                 // $select_categories_id = mysqli_query($connection, $query);
