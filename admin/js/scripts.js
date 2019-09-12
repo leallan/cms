@@ -1,5 +1,10 @@
-tinymce.init({selector: 'textarea'});
-
+$(document).ready(function () {
+    ClassicEditor
+        .create(document.querySelector('#body'))
+        .catch(error => {
+            console.error(error);
+        });
+});
 
 $(document).ready(function() {
     $('#selectAllBoxes').click(function(event) {
