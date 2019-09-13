@@ -53,7 +53,7 @@ if(isset($_POST['submit'])) {
                     <div class="form-wrap">
                         <h1>Register</h1>
                         <form role="form" action="registration.php" method="post" id="login-form" autocomplete="off">
-                            <h6 class="text-center alert alert-danger" role="alert"><?php echo $message; ?></h6>
+                            <h6 class="text-center" role="alert"><?php echo $message; ?></h6>
                             <div class="form-group">
                                 <label for="username" class="sr-only">username</label>
                                 <input type="text" name="username" id="username" class="form-control" placeholder="Enter Username">

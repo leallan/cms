@@ -3,7 +3,7 @@
 
 
 <?php
-if(isset($_POST['login'])) {
+if(isset($_POST['login'])) {    
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -26,7 +26,7 @@ if(isset($_POST['login'])) {
        $db_user_role = $row['user_role'];
     }
     
-    $password = crypt($password, $db_password);
+    //$password = crypt($password, $db_password);
 
     if($username === $db_user_firstname && $password === $db_password) {
         $_SESSION['username'] = $db_username;
