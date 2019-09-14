@@ -72,24 +72,6 @@ if (isset($_POST['edit_user'])) {
                             <input type="text" value="<?php echo $user_lastname; ?> " class="form-control" name="user_lastname">
                         </div>
                         <div class="form-group">
-                            <select name="user_role" id="user_role">
-                                <option value="<?php echo $user_role; ?>"><?php echo $user_role; ?></option>
-                                <?php
-                                if ($user_role == 'admin') {
-                                    echo "<option value='subscriber'>subscriber</option>";
-                                } else {
-                                    echo "<option value='admin'>admin</option>";
-                                }
-                                ?>
-                            </select>
-                        </div>
-
-                        <!-- <div class="form-group">
-        <label for="post_image">Post Image</label>
-        <input type="file" class="form-control" name="image">
-    </div> -->
-
-                        <div class="form-group">
                             <label for="post_tags">User Name</label>
                             <input type="text" value="<?php echo $username; ?> " class="form-control" name="username">
                         </div>
@@ -99,7 +81,7 @@ if (isset($_POST['edit_user'])) {
                         </div>
                         <div class="form-group">
                             <label for="post_content">Password</label>
-                            <input type="password" value="<?php echo $user_password; ?> " class="form-control" name="user_password">
+                            <input type="password" autocomplete="off" class="form-control" name="user_password">
                         </div>
                         <div class="form-group">
                             <input class="btn btn-primary" type="submit" name="edit_user" value="Update Profile">
